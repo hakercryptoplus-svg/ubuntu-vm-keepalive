@@ -11,7 +11,7 @@ services:
       - key: SSH_USER
         value: ubuntu
       - key: SSH_PASSWORD
-        sync: false
+        value: ubuntu123
       - key: PING_INTERVAL
         value: "25000"
       - key: SSH_RECONNECT
