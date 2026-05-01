@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ubuntu-vm-keepalive
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: REPLIT_HOST
+        value: 4a52e65a88c1-00-19z61njhlnfbf.janeway.replit.dev
+      - key: SSH_USER
+        value: ubuntu
+      - key: SSH_PASSWORD
+        sync: false
+      - key: PING_INTERVAL
+        value: "25000"
+      - key: SSH_RECONNECT
+        value: "8000"
